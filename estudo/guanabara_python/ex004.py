@@ -1,0 +1,10 @@
+""" Dissecando uma variável """
+v = input('Digite algo: ')
+print('O tipo primitivo desse valor é:', type(v))
+print('Só tem espaços? ', v.isspace())
+print('É numérico? ', v.isnumeric())
+print('É alfabético? ', v.isalpha())
+print('É alfanumérico? ', v.isalnum())
+print('É maiúscula? ', v.isupper())
+print('É minúscula? ', v.islower())
+print('Está capitalizada? ', v.istitle())
