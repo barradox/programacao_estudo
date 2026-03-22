@@ -14,17 +14,19 @@ Crie um programa que leia dois valores e mostre um menu na tela:
 Seu programa deverá realizar a operação solicitada em cada caso.
 
 """
+from time import sleep
+n1 = float(input('Digite o primeiro número: '))
+n2 = float(input('Digite o segundo número: '))
 menu = False
 while not menu:
     
-    n1 = float(input('Digite o primeiro número: '))
-    n2 = float(input('Digite o segundo número: '))
+    print('-=' * 13)
     opcao = int(input('''Escolha o que quer fazer:
-        [ 1 ] somar
-        [ 2 ] multiplicar
-        [ 3 ] maior
-        [ 4 ] inserir novos números
-        [ 5 ] sair do programa\n'''))
+[ 1 ] somar
+[ 2 ] multiplicar
+[ 3 ] maior
+[ 4 ] inserir novos números
+[ 5 ] sair do programa\n'''))
     if opcao == 1:
         soma = n1 + n2
         print('A soma de {} com {} é {}'.format(n1, n2, soma))
@@ -42,11 +44,12 @@ while not menu:
             print('Os números são iguais.')
     
     elif opcao == 4:
-       None
+       n1 = int(input('Digite o primeiro número: '))
+       n2 = int(input('Digite o segundo número: '))
 
     elif opcao == 5:
         break
 
     else: 
         print('Opção inválida.')
-    print('-=' * 13)
+    sleep(2)
