@@ -3,7 +3,7 @@ Melhore o desafio 61 perguntando para o usuário se ele quer mostrar mais alguns
 termos. O programa encerrará quando ele disser que quer mostrar 0 termos.
 
 """
-
+# REFAZER
 print('-=' * 7)
 print('Gerador de PA')
 print('-=' * 7)
